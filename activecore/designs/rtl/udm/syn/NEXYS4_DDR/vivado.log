@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct  2 19:31:39 2024
+# Process ID: 2696
+# Current directory: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2424 C:\Users\mamon\Documents\ITMO\HDL\activecore\designs\rtl\udm\syn\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/vivado.log
+# Journal file: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 754.098 ; gain = 140.566
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Oct  2 19:33:57 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Oct  2 19:35:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Oct  2 19:37:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/.Xil/Vivado-2696-Ivan/sys_clk/sys_clk.dcp' for cell 'sys_clk'
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc] for cell 'sys_clk/inst'
+Finished Parsing XDC File [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc] for cell 'sys_clk/inst'
+Parsing XDC File [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc] for cell 'sys_clk/inst'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon. [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc:57]
+INFO: [Common 17-344] 'get_clocks' was cancelled [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc:57]
+Finished Parsing XDC File [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc] for cell 'sys_clk/inst'
+Parsing XDC File [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
+Finished Parsing XDC File [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1670.953 ; gain = 897.402
+INFO: [Common 17-344] 'open_run' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  8 15:08:26 2024...

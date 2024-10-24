@@ -1,0 +1,1220 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 26 02:14:15 2024
+# Process ID: 25344
+# Current directory: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27776 C:\Users\mamon\Documents\ITMO\HDL\activecore\designs\rtl\udm\syn\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/vivado.log
+# Journal file: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr
+INFO: [Project 1-313] Project file moved from 'D:/PROJECTS/PERSONAL/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'sys_clk_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files', nor could it be found using path 'D:/PROJECTS/PERSONAL/activecore/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 688.105 ; gain = 70.875
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Sep 26 03:04:45 2024] Launched sys_clk_synth_1, synth_1...
+Run output will be captured here:
+sys_clk_synth_1: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/sys_clk_synth_1/runme.log
+synth_1: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+[Thu Sep 26 03:04:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1712.469 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 1712.469 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1712.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1835.410 ; gain = 892.996
+report_clock_networks -name {network_1}
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk
+INFO: [VRFC 10-311] analyzing module sys_clk_sys_clk_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/tb/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+WARNING: [VRFC 10-3824] variable 'ARRSIZE' must explicitly be declared as automatic or static [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/tb/tb.sv:86]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NEXYS4_DDR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/udm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/udm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/reset_sync/reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/ram/ram_dual_memsplit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_memsplit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/ram/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/ram/ram_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 03603160a2ff4bb7b83a1876f332687d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 03603160a2ff4bb7b83a1876f332687d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 10 for port 'adr0_i' [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv:120]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/ram/ram_dual.v:56]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/ram/ram_dual.v:62]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/ram/ram_dual.v:125]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=100,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="none",init_data="nodata.hex",adr_width=10) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MemSplit32
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module xil_defaultlib.sys_clk_sys_clk_clk_wiz
+Compiling module xil_defaultlib.sys_clk
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=100)
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=100,RTX_EXTERNAL...
+Compiling module xil_defaultlib.ram_dual(init_type="none",init_d...
+Compiling module xil_defaultlib.NEXYS4_DDR(SIM="YES")
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 26 03:35:53 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1982.066 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+### SIMULATION STARTED ###
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1983.609 ; gain = 0.441
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 1983.609 ; gain = 1.543
+report_timing_summary
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Sep 26 03:38:12 2024
+| Host         : Ivan running 64-bit major release  (build 9200)
+| Command      : report_timing_summary
+| Design       : NEXYS4_DDR
+| Device       : 7a100t-csg324
+| Speed File   : -3  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 18 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 17 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 393 register/latch pins with multiple clocks. (HIGH)
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      4.837        0.000                      0                 1107        0.065        0.000                      0                 1107        3.000        0.000                       0                   399  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                 Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                 ------------       ----------      --------------
+CLK100MHZ             {0.000 5.000}      10.000          100.000         
+  clk_out1_sys_clk    {0.000 5.000}      10.000          100.000         
+  clkfbout_sys_clk    {0.000 5.000}      10.000          100.000         
+sys_clk_pin           {0.000 5.000}      10.000          100.000         
+  clk_out1_sys_clk_1  {0.000 5.000}      10.000          100.000         
+  clkfbout_sys_clk_1  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+CLK100MHZ                                                                                                                                                               3.000        0.000                       0                     1  
+  clk_out1_sys_clk          4.837        0.000                      0                 1107        0.139        0.000                      0                 1107        4.500        0.000                       0                   395  
+  clkfbout_sys_clk                                                                                                                                                      8.408        0.000                       0                     3  
+sys_clk_pin                                                                                                                                                             3.000        0.000                       0                     1  
+  clk_out1_sys_clk_1        4.838        0.000                      0                 1107        0.139        0.000                      0                 1107        4.500        0.000                       0                   395  
+  clkfbout_sys_clk_1                                                                                                                                                    8.408        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock          To Clock                WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------          --------                -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+clk_out1_sys_clk_1  clk_out1_sys_clk          4.837        0.000                      0                 1107        0.065        0.000                      0                 1107  
+clk_out1_sys_clk    clk_out1_sys_clk_1        4.837        0.000                      0                 1107        0.065        0.000                      0                 1107  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  CLK100MHZ
+  To Clock:  CLK100MHZ
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         CLK100MHZ
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { CLK100MHZ }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_sys_clk
+  To Clock:  clk_out1_sys_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.837ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.139ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.837ns  (required time - arrival time)
+  Source:                 udm/udm_controller/timeout_counter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            udm/udm_controller/RD_DATA_reg_reg[28]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_sys_clk rise@10.000ns - clk_out1_sys_clk rise@0.000ns)
+  Data Path Delay:        4.668ns  (logic 0.966ns (20.692%)  route 3.702ns (79.308%))
+  Logic Levels:           5  (LUT2=1 LUT6=4)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.756ns = ( 9.244 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.302ns
+    Clock Pessimism Removal (CPR):    0.348ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_sys_clk rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.974     2.304    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.294    -2.990 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.297    -1.693    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076    -1.617 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         1.314    -0.302    udm/udm_controller/clk_out1
+    SLICE_X1Y65          FDRE                                         r  udm/udm_controller/timeout_counter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y65          FDRE (Prop_fdre_C_Q)         0.341     0.039 f  udm/udm_controller/timeout_counter_reg[3]/Q
+                         net (fo=2, routed)           0.614     0.653    udm/udm_controller/timeout_counter_reg_n_0_[3]
+    SLICE_X0Y65          LUT6 (Prop_lut6_I2_O)        0.097     0.750 r  udm/udm_controller/tx_err_ack_i_9/O
+                         net (fo=1, routed)           0.603     1.353    udm/udm_controller/tx_err_ack_i_9_n_0
+    SLICE_X0Y68          LUT6 (Prop_lut6_I5_O)        0.097     1.450 f  udm/udm_controller/tx_err_ack_i_3/O
+                         net (fo=3, routed)           0.322     1.772    udm/udm_controller/tx_err_ack_i_3_n_0
+    SLICE_X0Y71          LUT6 (Prop_lut6_I2_O)        0.097     1.869 f  udm/udm_controller/tx_err_ack_i_2/O
+                         net (fo=10, routed)          1.130     2.999    udm/udm_controller/tx_err_ack_i_2_n_0
+    SLICE_X10Y74         LUT2 (Prop_lut2_I1_O)        0.100     3.099 r  udm/udm_controller/tx_err_resp_i_2/O
+                         net (fo=3, routed)           0.417     3.516    udm/udm_controller/tx_err_resp_i_2_n_0
+    SLICE_X7Y73          LUT6 (Prop_lut6_I5_O)        0.234     3.750 r  udm/udm_controller/RD_DATA_reg[31]_i_1/O
+                         net (fo=8, routed)           0.616     4.366    udm/udm_controller/RD_DATA_reg[31]_i_1_n_0
+    SLICE_X11Y70         FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[28]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_sys_clk rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    10.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.916    12.179    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.390     6.790 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.234     8.024    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072     8.096 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         1.148     9.244    udm/udm_controller/clk_out1
+    SLICE_X11Y70         FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[28]/C
+                         clock pessimism              0.348     9.592    
+                         clock uncertainty           -0.074     9.517    
+    SLICE_X11Y70         FDRE (Setup_fdre_C_R)       -0.314     9.203    udm/udm_controller/RD_DATA_reg_reg[28]
+  -------------------------------------------------------------------
+                         required time                          9.203    
+                         arrival time                          -4.366    
+  -------------------------------------------------------------------
+                         slack                                  4.837    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.139ns  (arrival time - required time)
+  Source:                 udm/udm_controller/RD_DATA_reg_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            udm/udm_controller/RD_DATA_reg_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_sys_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_sys_clk rise@0.000ns - clk_out1_sys_clk rise@0.000ns)
+  Data Path Delay:        0.272ns  (logic 0.186ns (68.381%)  route 0.086ns (31.619%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.842ns
+    Source Clock Delay      (SCD):    -0.601ns
+    Clock Pessimism Removal (CPR):    -0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_sys_clk rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         0.563    -0.601    udm/udm_controller/clk_out1
+    SLICE_X9Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y73          FDRE (Prop_fdre_C_Q)         0.141    -0.460 r  udm/udm_controller/RD_DATA_reg_reg[27]/Q
+                         net (fo=1, routed)           0.086    -0.374    udm/udm_controller/in45[19]
+    SLICE_X8Y73          LUT5 (Prop_lut5_I0_O)        0.045    -0.329 r  udm/udm_controller/RD_DATA_reg[19]_i_1/O
+                         net (fo=1, routed)           0.000    -0.329    udm/udm_controller/RD_DATA_reg[19]
+    SLICE_X8Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_sys_clk rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         0.831    -0.842    udm/udm_controller/clk_out1
+    SLICE_X8Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[19]/C
+                         clock pessimism              0.254    -0.588    
+    SLICE_X8Y73          FDRE (Hold_fdre_C_D)         0.120    -0.468    udm/udm_controller/RD_DATA_reg_reg[19]
+  -------------------------------------------------------------------
+                         required time                          0.468    
+                         arrival time                          -0.329    
+  -------------------------------------------------------------------
+                         slack                                  0.139    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_sys_clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { sys_clk/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.234         10.000      7.766      RAMB36_X0Y14     testmem/ram_reg/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X1Y68      udm/udm_controller/timeout_counter_reg[0]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X7Y77      udm/uart_tx/clk_counter_reg[1]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_sys_clk
+  To Clock:  clkfbout_sys_clk
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        8.408ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_sys_clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { sys_clk/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            1.592         10.000      8.408      BUFGCTRL_X0Y17   sys_clk/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { CLK100MHZ }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_sys_clk_1
+  To Clock:  clk_out1_sys_clk_1
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.838ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.139ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.838ns  (required time - arrival time)
+  Source:                 udm/udm_controller/timeout_counter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            udm/udm_controller/RD_DATA_reg_reg[28]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_sys_clk_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_sys_clk_1 rise@10.000ns - clk_out1_sys_clk_1 rise@0.000ns)
+  Data Path Delay:        4.668ns  (logic 0.966ns (20.692%)  route 3.702ns (79.308%))
+  Logic Levels:           5  (LUT2=1 LUT6=4)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.756ns = ( 9.244 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.302ns
+    Clock Pessimism Removal (CPR):    0.348ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.129ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_sys_clk_1 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.974     2.304    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.294    -2.990 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.297    -1.693    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076    -1.617 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         1.314    -0.302    udm/udm_controller/clk_out1
+    SLICE_X1Y65          FDRE                                         r  udm/udm_controller/timeout_counter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y65          FDRE (Prop_fdre_C_Q)         0.341     0.039 f  udm/udm_controller/timeout_counter_reg[3]/Q
+                         net (fo=2, routed)           0.614     0.653    udm/udm_controller/timeout_counter_reg_n_0_[3]
+    SLICE_X0Y65          LUT6 (Prop_lut6_I2_O)        0.097     0.750 r  udm/udm_controller/tx_err_ack_i_9/O
+                         net (fo=1, routed)           0.603     1.353    udm/udm_controller/tx_err_ack_i_9_n_0
+    SLICE_X0Y68          LUT6 (Prop_lut6_I5_O)        0.097     1.450 f  udm/udm_controller/tx_err_ack_i_3/O
+                         net (fo=3, routed)           0.322     1.772    udm/udm_controller/tx_err_ack_i_3_n_0
+    SLICE_X0Y71          LUT6 (Prop_lut6_I2_O)        0.097     1.869 f  udm/udm_controller/tx_err_ack_i_2/O
+                         net (fo=10, routed)          1.130     2.999    udm/udm_controller/tx_err_ack_i_2_n_0
+    SLICE_X10Y74         LUT2 (Prop_lut2_I1_O)        0.100     3.099 r  udm/udm_controller/tx_err_resp_i_2/O
+                         net (fo=3, routed)           0.417     3.516    udm/udm_controller/tx_err_resp_i_2_n_0
+    SLICE_X7Y73          LUT6 (Prop_lut6_I5_O)        0.234     3.750 r  udm/udm_controller/RD_DATA_reg[31]_i_1/O
+                         net (fo=8, routed)           0.616     4.366    udm/udm_controller/RD_DATA_reg[31]_i_1_n_0
+    SLICE_X11Y70         FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[28]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_sys_clk_1 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    10.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.916    12.179    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.390     6.790 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.234     8.024    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072     8.096 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         1.148     9.244    udm/udm_controller/clk_out1
+    SLICE_X11Y70         FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[28]/C
+                         clock pessimism              0.348     9.592    
+                         clock uncertainty           -0.074     9.518    
+    SLICE_X11Y70         FDRE (Setup_fdre_C_R)       -0.314     9.204    udm/udm_controller/RD_DATA_reg_reg[28]
+  -------------------------------------------------------------------
+                         required time                          9.204    
+                         arrival time                          -4.366    
+  -------------------------------------------------------------------
+                         slack                                  4.838    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.139ns  (arrival time - required time)
+  Source:                 udm/udm_controller/RD_DATA_reg_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            udm/udm_controller/RD_DATA_reg_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_sys_clk_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_sys_clk_1 rise@0.000ns - clk_out1_sys_clk_1 rise@0.000ns)
+  Data Path Delay:        0.272ns  (logic 0.186ns (68.381%)  route 0.086ns (31.619%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.842ns
+    Source Clock Delay      (SCD):    -0.601ns
+    Clock Pessimism Removal (CPR):    -0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_sys_clk_1 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         0.563    -0.601    udm/udm_controller/clk_out1
+    SLICE_X9Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y73          FDRE (Prop_fdre_C_Q)         0.141    -0.460 r  udm/udm_controller/RD_DATA_reg_reg[27]/Q
+                         net (fo=1, routed)           0.086    -0.374    udm/udm_controller/in45[19]
+    SLICE_X8Y73          LUT5 (Prop_lut5_I0_O)        0.045    -0.329 r  udm/udm_controller/RD_DATA_reg[19]_i_1/O
+                         net (fo=1, routed)           0.000    -0.329    udm/udm_controller/RD_DATA_reg[19]
+    SLICE_X8Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_sys_clk_1 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         0.831    -0.842    udm/udm_controller/clk_out1
+    SLICE_X8Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[19]/C
+                         clock pessimism              0.254    -0.588    
+    SLICE_X8Y73          FDRE (Hold_fdre_C_D)         0.120    -0.468    udm/udm_controller/RD_DATA_reg_reg[19]
+  -------------------------------------------------------------------
+                         required time                          0.468    
+                         arrival time                          -0.329    
+  -------------------------------------------------------------------
+                         slack                                  0.139    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_sys_clk_1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { sys_clk/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.234         10.000      7.766      RAMB36_X0Y14     testmem/ram_reg/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X1Y68      udm/udm_controller/timeout_counter_reg[0]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X7Y77      udm/uart_tx/clk_counter_reg[1]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_sys_clk_1
+  To Clock:  clkfbout_sys_clk_1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        8.408ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_sys_clk_1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { sys_clk/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            1.592         10.000      8.408      BUFGCTRL_X0Y17   sys_clk/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y2  sys_clk/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_sys_clk_1
+  To Clock:  clk_out1_sys_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.837ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.065ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.837ns  (required time - arrival time)
+  Source:                 udm/udm_controller/timeout_counter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            udm/udm_controller/RD_DATA_reg_reg[28]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_sys_clk rise@10.000ns - clk_out1_sys_clk_1 rise@0.000ns)
+  Data Path Delay:        4.668ns  (logic 0.966ns (20.692%)  route 3.702ns (79.308%))
+  Logic Levels:           5  (LUT2=1 LUT6=4)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.756ns = ( 9.244 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.302ns
+    Clock Pessimism Removal (CPR):    0.348ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_sys_clk_1 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.974     2.304    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.294    -2.990 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.297    -1.693    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076    -1.617 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         1.314    -0.302    udm/udm_controller/clk_out1
+    SLICE_X1Y65          FDRE                                         r  udm/udm_controller/timeout_counter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y65          FDRE (Prop_fdre_C_Q)         0.341     0.039 f  udm/udm_controller/timeout_counter_reg[3]/Q
+                         net (fo=2, routed)           0.614     0.653    udm/udm_controller/timeout_counter_reg_n_0_[3]
+    SLICE_X0Y65          LUT6 (Prop_lut6_I2_O)        0.097     0.750 r  udm/udm_controller/tx_err_ack_i_9/O
+                         net (fo=1, routed)           0.603     1.353    udm/udm_controller/tx_err_ack_i_9_n_0
+    SLICE_X0Y68          LUT6 (Prop_lut6_I5_O)        0.097     1.450 f  udm/udm_controller/tx_err_ack_i_3/O
+                         net (fo=3, routed)           0.322     1.772    udm/udm_controller/tx_err_ack_i_3_n_0
+    SLICE_X0Y71          LUT6 (Prop_lut6_I2_O)        0.097     1.869 f  udm/udm_controller/tx_err_ack_i_2/O
+                         net (fo=10, routed)          1.130     2.999    udm/udm_controller/tx_err_ack_i_2_n_0
+    SLICE_X10Y74         LUT2 (Prop_lut2_I1_O)        0.100     3.099 r  udm/udm_controller/tx_err_resp_i_2/O
+                         net (fo=3, routed)           0.417     3.516    udm/udm_controller/tx_err_resp_i_2_n_0
+    SLICE_X7Y73          LUT6 (Prop_lut6_I5_O)        0.234     3.750 r  udm/udm_controller/RD_DATA_reg[31]_i_1/O
+                         net (fo=8, routed)           0.616     4.366    udm/udm_controller/RD_DATA_reg[31]_i_1_n_0
+    SLICE_X11Y70         FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[28]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_sys_clk rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    10.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.916    12.179    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.390     6.790 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.234     8.024    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072     8.096 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         1.148     9.244    udm/udm_controller/clk_out1
+    SLICE_X11Y70         FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[28]/C
+                         clock pessimism              0.348     9.592    
+                         clock uncertainty           -0.074     9.517    
+    SLICE_X11Y70         FDRE (Setup_fdre_C_R)       -0.314     9.203    udm/udm_controller/RD_DATA_reg_reg[28]
+  -------------------------------------------------------------------
+                         required time                          9.203    
+                         arrival time                          -4.366    
+  -------------------------------------------------------------------
+                         slack                                  4.837    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.065ns  (arrival time - required time)
+  Source:                 udm/udm_controller/RD_DATA_reg_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            udm/udm_controller/RD_DATA_reg_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_sys_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_sys_clk rise@0.000ns - clk_out1_sys_clk_1 rise@0.000ns)
+  Data Path Delay:        0.272ns  (logic 0.186ns (68.381%)  route 0.086ns (31.619%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.842ns
+    Source Clock Delay      (SCD):    -0.601ns
+    Clock Pessimism Removal (CPR):    -0.254ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_sys_clk_1 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         0.563    -0.601    udm/udm_controller/clk_out1
+    SLICE_X9Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y73          FDRE (Prop_fdre_C_Q)         0.141    -0.460 r  udm/udm_controller/RD_DATA_reg_reg[27]/Q
+                         net (fo=1, routed)           0.086    -0.374    udm/udm_controller/in45[19]
+    SLICE_X8Y73          LUT5 (Prop_lut5_I0_O)        0.045    -0.329 r  udm/udm_controller/RD_DATA_reg[19]_i_1/O
+                         net (fo=1, routed)           0.000    -0.329    udm/udm_controller/RD_DATA_reg[19]
+    SLICE_X8Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_sys_clk rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         0.831    -0.842    udm/udm_controller/clk_out1
+    SLICE_X8Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[19]/C
+                         clock pessimism              0.254    -0.588    
+                         clock uncertainty            0.074    -0.514    
+    SLICE_X8Y73          FDRE (Hold_fdre_C_D)         0.120    -0.394    udm/udm_controller/RD_DATA_reg_reg[19]
+  -------------------------------------------------------------------
+                         required time                          0.394    
+                         arrival time                          -0.329    
+  -------------------------------------------------------------------
+                         slack                                  0.065    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_sys_clk
+  To Clock:  clk_out1_sys_clk_1
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.837ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.065ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.837ns  (required time - arrival time)
+  Source:                 udm/udm_controller/timeout_counter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            udm/udm_controller/RD_DATA_reg_reg[28]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_sys_clk_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_sys_clk_1 rise@10.000ns - clk_out1_sys_clk rise@0.000ns)
+  Data Path Delay:        4.668ns  (logic 0.966ns (20.692%)  route 3.702ns (79.308%))
+  Logic Levels:           5  (LUT2=1 LUT6=4)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.756ns = ( 9.244 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.302ns
+    Clock Pessimism Removal (CPR):    0.348ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_sys_clk rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.974     2.304    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.294    -2.990 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.297    -1.693    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076    -1.617 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         1.314    -0.302    udm/udm_controller/clk_out1
+    SLICE_X1Y65          FDRE                                         r  udm/udm_controller/timeout_counter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y65          FDRE (Prop_fdre_C_Q)         0.341     0.039 f  udm/udm_controller/timeout_counter_reg[3]/Q
+                         net (fo=2, routed)           0.614     0.653    udm/udm_controller/timeout_counter_reg_n_0_[3]
+    SLICE_X0Y65          LUT6 (Prop_lut6_I2_O)        0.097     0.750 r  udm/udm_controller/tx_err_ack_i_9/O
+                         net (fo=1, routed)           0.603     1.353    udm/udm_controller/tx_err_ack_i_9_n_0
+    SLICE_X0Y68          LUT6 (Prop_lut6_I5_O)        0.097     1.450 f  udm/udm_controller/tx_err_ack_i_3/O
+                         net (fo=3, routed)           0.322     1.772    udm/udm_controller/tx_err_ack_i_3_n_0
+    SLICE_X0Y71          LUT6 (Prop_lut6_I2_O)        0.097     1.869 f  udm/udm_controller/tx_err_ack_i_2/O
+                         net (fo=10, routed)          1.130     2.999    udm/udm_controller/tx_err_ack_i_2_n_0
+    SLICE_X10Y74         LUT2 (Prop_lut2_I1_O)        0.100     3.099 r  udm/udm_controller/tx_err_resp_i_2/O
+                         net (fo=3, routed)           0.417     3.516    udm/udm_controller/tx_err_resp_i_2_n_0
+    SLICE_X7Y73          LUT6 (Prop_lut6_I5_O)        0.234     3.750 r  udm/udm_controller/RD_DATA_reg[31]_i_1/O
+                         net (fo=8, routed)           0.616     4.366    udm/udm_controller/RD_DATA_reg[31]_i_1_n_0
+    SLICE_X11Y70         FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[28]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_sys_clk_1 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    10.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.916    12.179    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.390     6.790 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.234     8.024    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072     8.096 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         1.148     9.244    udm/udm_controller/clk_out1
+    SLICE_X11Y70         FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[28]/C
+                         clock pessimism              0.348     9.592    
+                         clock uncertainty           -0.074     9.517    
+    SLICE_X11Y70         FDRE (Setup_fdre_C_R)       -0.314     9.203    udm/udm_controller/RD_DATA_reg_reg[28]
+  -------------------------------------------------------------------
+                         required time                          9.203    
+                         arrival time                          -4.366    
+  -------------------------------------------------------------------
+                         slack                                  4.837    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.065ns  (arrival time - required time)
+  Source:                 udm/udm_controller/RD_DATA_reg_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            udm/udm_controller/RD_DATA_reg_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_sys_clk_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_sys_clk_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_sys_clk_1 rise@0.000ns - clk_out1_sys_clk rise@0.000ns)
+  Data Path Delay:        0.272ns  (logic 0.186ns (68.381%)  route 0.086ns (31.619%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.842ns
+    Source Clock Delay      (SCD):    -0.601ns
+    Clock Pessimism Removal (CPR):    -0.254ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_sys_clk rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         0.563    -0.601    udm/udm_controller/clk_out1
+    SLICE_X9Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y73          FDRE (Prop_fdre_C_Q)         0.141    -0.460 r  udm/udm_controller/RD_DATA_reg_reg[27]/Q
+                         net (fo=1, routed)           0.086    -0.374    udm/udm_controller/in45[19]
+    SLICE_X8Y73          LUT5 (Prop_lut5_I0_O)        0.045    -0.329 r  udm/udm_controller/RD_DATA_reg[19]_i_1/O
+                         net (fo=1, routed)           0.000    -0.329    udm/udm_controller/RD_DATA_reg[19]
+    SLICE_X8Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_sys_clk_1 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  sys_clk/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    sys_clk/inst/clk_in1_sys_clk
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  sys_clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    sys_clk/inst/clk_out1_sys_clk
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  sys_clk/inst/clkout1_buf/O
+                         net (fo=393, routed)         0.831    -0.842    udm/udm_controller/clk_out1
+    SLICE_X8Y73          FDRE                                         r  udm/udm_controller/RD_DATA_reg_reg[19]/C
+                         clock pessimism              0.254    -0.588    
+                         clock uncertainty            0.074    -0.514    
+    SLICE_X8Y73          FDRE (Hold_fdre_C_D)         0.120    -0.394    udm/udm_controller/RD_DATA_reg_reg[19]
+  -------------------------------------------------------------------
+                         required time                          0.394    
+                         arrival time                          -0.329    
+  -------------------------------------------------------------------
+                         slack                                  0.065    
+
+
+
+
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Sep 26 03:41:59 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Sep 26 03:43:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.501 . Memory (MB): peak = 2650.395 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.503 . Memory (MB): peak = 2650.395 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2650.395 ; gain = 17.574
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+create_report_config -report_name impl_1_route_report_timing_summary_1 -step route_design -report_type report_timing_summary -run impl_1
+report_clock_utilization -name clock_utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-3
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/.Xil/Vivado-25344-Ivan/sys_clk/sys_clk.dcp' for cell 'sys_clk'
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc] for cell 'sys_clk/inst'
+Finished Parsing XDC File [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc] for cell 'sys_clk/inst'
+Parsing XDC File [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc] for cell 'sys_clk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc:57]
+Finished Parsing XDC File [c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc] for cell 'sys_clk/inst'
+Parsing XDC File [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
+Finished Parsing XDC File [C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2650.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 2650.395 ; gain = 0.000
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Sep 26 11:28:25 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+[Thu Sep 26 11:28:25 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Sep 26 11:30:57 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+close_design
+close_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2650.395 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+close_design
+close_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2650.395 ; gain = 0.000
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.862 . Memory (MB): peak = 2650.395 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.866 . Memory (MB): peak = 2650.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2650.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2650.395 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2708.121 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 26 21:15:00 2024...

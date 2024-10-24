@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 26 02:14:15 2024
+# Process ID: 25344
+# Current directory: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27776 C:\Users\mamon\Documents\ITMO\HDL\activecore\designs\rtl\udm\syn\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/vivado.log
+# Journal file: C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_run impl_1
+report_clock_networks -name {network_1}
+launch_simulation
+open_wave_config C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg
+source tb.tcl
+report_timing_summary
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+create_report_config -report_name impl_1_route_report_timing_summary_1 -step route_design -report_type report_timing_summary -run impl_1
+report_clock_utilization -name clock_utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+open_run synth_1 -name synth_1
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+open_run impl_1
+close_sim
