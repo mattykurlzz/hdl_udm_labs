@@ -91,15 +91,16 @@ localparam CSR_SW_ADDR          = 32'h00000004;
 localparam TESTMEM_ADDR         = 32'h80000000;
 localparam FLOAT1_ADDR          = 32'h00000008;
 localparam FLOAT2_ADDR          = 32'h0000000C;
+localparam RES_ADDR             = 32'h00000010;
 
 logic[31:0] float1;
 logic[31:0] float2;
-logic[31:0] float_result;
+logic [31:0] float_result;
 
-float_math(
+float_math float_math(
     .float1(float1),
     .float2(float2),
-    .result(dloat_result)
+    .result(float_result)
 );
 
 localparam TESTMEM_WSIZE_POW    = 10;
@@ -179,20 +180,20 @@ always @(posedge clk_gen)
                     udm_csr_resp <= 1'b1;
                     udm_csr_rdata <= SW;
                     end
-                udm_testmem_resp <= udm_testmem_enb;
-                end
-                if (udm_bus.addr == FLOAT1_ADDR)
+                if (udm_bus.addr == RES_ADDR)
                     begin
                     udm_csr_resp <= 1'b1;
                     udm_csr_rdata <= float_result;
                     end
+//                udm_testmem_resp <= udm_testmem_enb;
+                end
             end
         
         end
     end
 
 // bus response
-assign udm_bus.resp = udm_csr_resp | udm_testmem_resp;
+assign udm_bus.resp = udm_csr_resp;
 assign udm_bus.rdata = (udm_csr_rdata & {32{udm_csr_resp}}) | (udm_testmem_rdata & {32{udm_testmem_resp}});
 
 endmodule

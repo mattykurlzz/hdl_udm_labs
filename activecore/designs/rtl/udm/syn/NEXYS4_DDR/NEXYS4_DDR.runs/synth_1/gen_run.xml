@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1727886946">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1729842215">
   <File Type="PA-TCL" Name="NEXYS4_DDR.tcl"/>
   <File Type="REPORTS-TCL" Name="NEXYS4_DDR_reports.tcl"/>
   <File Type="RDS-RDS" Name="NEXYS4_DDR.vds"/>
+  <File Type="RDS-UTIL" Name="NEXYS4_DDR_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="NEXYS4_DDR_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="NEXYS4_DDR.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -74,10 +76,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/float_math.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="NEXYS4_DDR"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

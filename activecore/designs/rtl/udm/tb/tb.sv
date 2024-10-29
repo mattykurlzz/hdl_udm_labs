@@ -22,6 +22,7 @@ module tb ();
 logic CLK_100MHZ, RST, rx;
 logic [15:0] SW;
 logic [15:0] LED;
+logic [31:0] result;
 
 always #`HALF_PERIOD CLK_100MHZ = ~CLK_100MHZ;
 
@@ -79,6 +80,9 @@ udm_driver udm = new();
 localparam CSR_LED_ADDR         = 32'h00000000;
 localparam CSR_SW_ADDR          = 32'h00000004;
 localparam TESTMEM_ADDR         = 32'h80000000;
+localparam FLOAT1_ADDR          = 32'h00000008;
+localparam FLOAT2_ADDR          = 32'h0000000C;
+localparam RES_ADDR          = 32'h00000010;
 
 initial
     begin
@@ -97,32 +101,54 @@ initial
 	WAIT(100);
 	
 	// memory initialization
-	udm.wr32(32'h80000000, 32'h112233cc);
-	udm.wr32(32'h80000004, 32'h55aa55aa);
-	udm.wr32(32'h80000008, 32'h01010202);
-	udm.wr32(32'h8000000C, 32'h44556677);
-	udm.wr32(32'h80000010, 32'h00000003);
-	udm.wr32(32'h80000014, 32'h00000004);
-	udm.wr32(32'h80000018, 32'h00000005);
-	udm.wr32(32'h8000001C, 32'h00000006);
-	udm.wr32(32'h80000020, 32'h00000007);
-	udm.wr32(32'h80000024, 32'hdeadbeef);
-	udm.wr32(32'h80000028, 32'hfefe8800);
-	udm.wr32(32'h8000002C, 32'h23344556);
-	udm.wr32(32'h80000030, 32'h05050505);
-	udm.wr32(32'h80000034, 32'h07070707);
-	udm.wr32(32'h80000038, 32'h99999999);
-	udm.wr32(32'h8000003C, 32'hbadc0ffe);
+//	udm.wr32(32'h80000000, 32'h112233cc);
+//	udm.wr32(32'h80000004, 32'h55aa55aa);
+//	udm.wr32(32'h80000008, 32'h01010202);
+//	udm.wr32(32'h8000000C, 32'h44556677);
+//	udm.wr32(32'h80000010, 32'h00000003);
+//	udm.wr32(32'h80000014, 32'h00000004);
+//	udm.wr32(32'h80000018, 32'h00000005);
+//	udm.wr32(32'h8000001C, 32'h00000006);
+//	udm.wr32(32'h80000020, 32'h00000007);
+//	udm.wr32(32'h80000024, 32'hdeadbeef);
+//	udm.wr32(32'h80000028, 32'hfefe8800);
+//	udm.wr32(32'h8000002C, 32'h23344556);
+//	udm.wr32(32'h80000030, 32'h05050505);
+//	udm.wr32(32'h80000034, 32'h07070707);
+//	udm.wr32(32'h80000038, 32'h99999999);
+//	udm.wr32(32'h8000003C, 32'hbadc0ffe);
 	
+	udm.wr32(32'h00000008, 32'h3f800000); // 1.0
+	udm.wr32(32'h0000000C, 32'h40200000); // 2.5
+	udm.rd32(32'h00000010); // should be 3.5
+	wait(1)
+	udm.wr32(32'h00000008, 32'hbf800000); // -1.0
+	udm.wr32(32'h0000000C, 32'h40200000); // 2.5
+	udm.rd32(32'h00000010); // should be 1.5
+	wait(1)
+	udm.wr32(32'h00000008, 32'h3f800000); // 1.0
+	udm.wr32(32'h0000000C, 32'hc0200000); // -2.5
+	udm.rd32(32'h00000010); // should be -1.5
+	wait(1)
+	udm.wr32(32'h00000008, 32'hbf800000); // -1.0
+	udm.wr32(32'h0000000C, 32'hc0200000); // -2.5
+	udm.rd32(32'h00000010); // should be -3.5
+	wait(1)
+	udm.wr32(32'h00000008, 32'hbecccccd); // -.4
+	udm.wr32(32'h0000000C, 32'h3e99999a); // .3
+	udm.rd32(32'h00000010); // should be -3.5
+	
+	$display ("### TEST PROCEDURE FINISHED ###");
+//	$display ("%f + %f = %f", 32'h00340508, 32'h00110108, result);
 	WAIT(100);
 	
 	// writing to LED
-	udm.wr32(32'h00000000, 32'h5a5a5a5a);
+	//udm.wr32(32'h00000000, 32'h5a5a5a5a);
 	
 	// reading SW
-	udm.rd32(32'h00000004);
+	//udm.rd32(32'h00000004);
 	
-	WAIT(1000);
+	//WAIT(1000);
 
 	$display ("### TEST PROCEDURE FINISHED ###");
 	$stop;

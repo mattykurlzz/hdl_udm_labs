@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-3
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,7 +32,10 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib -sv C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv
+read_verilog -library xil_defaultlib -sv {
+  C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv
+  C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/float_math.sv
+}
 read_verilog -library xil_defaultlib {
   C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/udm.v
   C:/Users/mamon/Documents/ITMO/HDL/activecore/designs/rtl/udm/hw/uart_rx.v

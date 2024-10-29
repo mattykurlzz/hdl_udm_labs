@@ -16,6 +16,10 @@ verilog xil_defaultlib  \
 "../../../../../../../ram/ram.v" \
 "../../../../../../../ram/ram_dual.v" \
 
+sv xil_defaultlib  \
+"../../../../NEXYS4_DDR.srcs/sources_1/new/float_math.sv" \
+"../../../../NEXYS4_DDR.srcs/sim_1/new/float_math_tb.sv" \
+
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
 
