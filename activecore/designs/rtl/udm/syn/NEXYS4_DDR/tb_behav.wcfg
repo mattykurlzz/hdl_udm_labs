@@ -11,72 +11,121 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="31880000001fs"></ZoomEndTime>
-      <Cursor1Time time="16000000000fs"></Cursor1Time>
+      <ZoomStartTime time="8426250000fs"></ZoomStartTime>
+      <ZoomEndTime time="9012750001fs"></ZoomEndTime>
+      <Cursor1Time time="8915000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="437"></NameColumnWidth>
-      <ValueColumnWidth column_width="268"></ValueColumnWidth>
+      <ValueColumnWidth column_width="258"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
-   <wvobject fp_name="/tb/SW" type="array">
-      <obj_property name="ElementShortName">SW[15:0]</obj_property>
-      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/tb/DUT/float_math/rst_i" type="logic">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/LED" type="array">
-      <obj_property name="ElementShortName">LED[15:0]</obj_property>
-      <obj_property name="ObjectShortName">LED[15:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="/tb/DUT/float_math/float1" type="array">
+      <obj_property name="ElementShortName">float1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">float1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/DUT/clk_gen" type="logic">
-      <obj_property name="ElementShortName">clk_gen</obj_property>
-      <obj_property name="ObjectShortName">clk_gen</obj_property>
+   <wvobject fp_name="/tb/DUT/float_math/float2" type="array">
+      <obj_property name="ElementShortName">float2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">float2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/DUT/udm_reset" type="logic">
-      <obj_property name="ElementShortName">udm_reset</obj_property>
-      <obj_property name="ObjectShortName">udm_reset</obj_property>
+   <wvobject fp_name="/tb/DUT/float_math/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
    </wvobject>
-   <wvobject fp_name="group24" type="group">
-      <obj_property name="label">udm_bus</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/tb/DUT/udm_bus/req" type="logic">
-         <obj_property name="ElementShortName">req</obj_property>
-         <obj_property name="ObjectShortName">req</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/DUT/udm_bus/ack" type="logic">
-         <obj_property name="ElementShortName">ack</obj_property>
-         <obj_property name="ObjectShortName">ack</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/DUT/udm_bus/addr" type="array">
-         <obj_property name="ElementShortName">addr[31:0]</obj_property>
-         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/DUT/udm_bus/we" type="logic">
-         <obj_property name="ElementShortName">we</obj_property>
-         <obj_property name="ObjectShortName">we</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/DUT/udm_bus/wdata" type="array">
-         <obj_property name="ElementShortName">wdata[31:0]</obj_property>
-         <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/DUT/udm_bus/be" type="array">
-         <obj_property name="ElementShortName">be[3:0]</obj_property>
-         <obj_property name="ObjectShortName">be[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/DUT/udm_bus/resp" type="logic">
-         <obj_property name="ElementShortName">resp</obj_property>
-         <obj_property name="ObjectShortName">resp</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/DUT/udm_bus/rdata" type="array">
-         <obj_property name="ElementShortName">rdata[31:0]</obj_property>
-         <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/DUT/testmem/ram" type="array">
-      <obj_property name="ElementShortName">ram[0:1023][31:0]</obj_property>
-      <obj_property name="ObjectShortName">ram[0:1023][31:0]</obj_property>
+   <wvobject fp_name="/tb/DUT/float_math/exp1_initial" type="array">
+      <obj_property name="ElementShortName">exp1_initial[7:0]</obj_property>
+      <obj_property name="ObjectShortName">exp1_initial[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/exp2_initial" type="array">
+      <obj_property name="ElementShortName">exp2_initial[7:0]</obj_property>
+      <obj_property name="ObjectShortName">exp2_initial[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/exp_2" type="array">
+      <obj_property name="ElementShortName">exp_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">exp_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/exp_3" type="array">
+      <obj_property name="ElementShortName">exp_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">exp_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/exp_out" type="array">
+      <obj_property name="ElementShortName">exp_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">exp_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/mant1_initial" type="array">
+      <obj_property name="ElementShortName">mant1_initial[24:0]</obj_property>
+      <obj_property name="ObjectShortName">mant1_initial[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/mant2_initial" type="array">
+      <obj_property name="ElementShortName">mant2_initial[24:0]</obj_property>
+      <obj_property name="ObjectShortName">mant2_initial[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/mant1_2" type="array">
+      <obj_property name="ElementShortName">mant1_2[24:0]</obj_property>
+      <obj_property name="ObjectShortName">mant1_2[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/mant2_2" type="array">
+      <obj_property name="ElementShortName">mant2_2[24:0]</obj_property>
+      <obj_property name="ObjectShortName">mant2_2[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/mant_sum_2" type="array">
+      <obj_property name="ElementShortName">mant_sum_2[24:0]</obj_property>
+      <obj_property name="ObjectShortName">mant_sum_2[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/mant_3" type="array">
+      <obj_property name="ElementShortName">mant_3[24:0]</obj_property>
+      <obj_property name="ObjectShortName">mant_3[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/mant_out" type="array">
+      <obj_property name="ElementShortName">mant_out[24:0]</obj_property>
+      <obj_property name="ObjectShortName">mant_out[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/sign1_initial" type="logic">
+      <obj_property name="ElementShortName">sign1_initial</obj_property>
+      <obj_property name="ObjectShortName">sign1_initial</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/sign2_initial" type="logic">
+      <obj_property name="ElementShortName">sign2_initial</obj_property>
+      <obj_property name="ObjectShortName">sign2_initial</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/sign1_2" type="logic">
+      <obj_property name="ElementShortName">sign1_2</obj_property>
+      <obj_property name="ObjectShortName">sign1_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/sign2_2" type="logic">
+      <obj_property name="ElementShortName">sign2_2</obj_property>
+      <obj_property name="ObjectShortName">sign2_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/sign_3" type="logic">
+      <obj_property name="ElementShortName">sign_3</obj_property>
+      <obj_property name="ObjectShortName">sign_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/sign_out" type="logic">
+      <obj_property name="ElementShortName">sign_out</obj_property>
+      <obj_property name="ObjectShortName">sign_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/float_math/shift" type="array">
+      <obj_property name="ElementShortName">shift[31:0]</obj_property>
+      <obj_property name="ObjectShortName">shift[31:0]</obj_property>
    </wvobject>
 </wave_config>

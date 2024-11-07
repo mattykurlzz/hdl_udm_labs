@@ -120,23 +120,28 @@ initial
 	
 	udm.wr32(32'h00000008, 32'h3f800000); // 1.0
 	udm.wr32(32'h0000000C, 32'h40200000); // 2.5
+	#500
 	udm.rd32(32'h00000010); // should be 3.5
 	wait(1)
 	udm.wr32(32'h00000008, 32'hbf800000); // -1.0
 	udm.wr32(32'h0000000C, 32'h40200000); // 2.5
+	#500
 	udm.rd32(32'h00000010); // should be 1.5
 	wait(1)
 	udm.wr32(32'h00000008, 32'h3f800000); // 1.0
 	udm.wr32(32'h0000000C, 32'hc0200000); // -2.5
+	#500
 	udm.rd32(32'h00000010); // should be -1.5
 	wait(1)
 	udm.wr32(32'h00000008, 32'hbf800000); // -1.0
 	udm.wr32(32'h0000000C, 32'hc0200000); // -2.5
+	#500
 	udm.rd32(32'h00000010); // should be -3.5
 	wait(1)
 	udm.wr32(32'h00000008, 32'hbecccccd); // -.4
 	udm.wr32(32'h0000000C, 32'h3e99999a); // .3
-	udm.rd32(32'h00000010); // should be -3.5
+	#500
+	udm.rd32(32'h00000010); // should be -1
 	
 	$display ("### TEST PROCEDURE FINISHED ###");
 //	$display ("%f + %f = %f", 32'h00340508, 32'h00110108, result);

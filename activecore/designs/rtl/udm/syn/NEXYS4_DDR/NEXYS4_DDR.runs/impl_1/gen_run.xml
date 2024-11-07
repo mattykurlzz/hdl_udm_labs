@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1729842215">
+  <File Type="BITSTR-BMM" Name="NEXYS4_DDR_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="NEXYS4_DDR_power_routed.rpt"/>
   <File Type="PA-TCL" Name="NEXYS4_DDR.tcl"/>
-  <File Type="BITSTR-BMM" Name="NEXYS4_DDR_bd.bmm"/>
+  <File Type="OPT-DCP" Name="NEXYS4_DDR_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="NEXYS4_DDR_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="NEXYS4_DDR_reports.tcl"/>
-  <File Type="OPT-DCP" Name="NEXYS4_DDR_opt.dcp"/>
   <File Type="OPT-DRC" Name="NEXYS4_DDR_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="NEXYS4_DDR.hwdef"/>
   <File Type="PWROPT-DCP" Name="NEXYS4_DDR_pwropt.dcp"/>
@@ -25,21 +25,21 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="NEXYS4_DDR_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="NEXYS4_DDR_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="NEXYS4_DDR_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="NEXYS4_DDR_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="NEXYS4_DDR.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="NEXYS4_DDR_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="NEXYS4_DDR_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="NEXYS4_DDR.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="NEXYS4_DDR_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="NEXYS4_DDR_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="NEXYS4_DDR_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="NEXYS4_DDR.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="NEXYS4_DDR_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="NEXYS4_DDR_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="NEXYS4_DDR_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="NEXYS4_DDR_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="NEXYS4_DDR_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="NEXYS4_DDR_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="NEXYS4_DDR_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="NEXYS4_DDR_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="NEXYS4_DDR.vdi"/>
+  <File Type="ROUTE-CLK" Name="NEXYS4_DDR_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="NEXYS4_DDR_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="NEXYS4_DDR_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="NEXYS4_DDR_bus_skew_routed.rpx"/>

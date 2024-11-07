@@ -93,13 +93,15 @@ localparam FLOAT1_ADDR          = 32'h00000008;
 localparam FLOAT2_ADDR          = 32'h0000000C;
 localparam RES_ADDR             = 32'h00000010;
 
-logic[31:0] float1;
-logic[31:0] float2;
-logic [31:0] float_result;
+reg[31:0] float1;
+reg[31:0] float2;
+reg [31:0] float_result;
 
 float_math float_math(
+    .rst_i(srst),
     .float1(float1),
     .float2(float2),
+    .clk_i(clk_gen),
     .result(float_result)
 );
 
